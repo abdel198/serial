@@ -1,7 +1,7 @@
 /****************************************************************
 **                                                             **                                                             
 **                       titulo :                              **                                                             
-**                       serial_9                              **
+**                       Control Structures_1                  **                 
 **                                                             ** 
 **    NOM : ABDELLAZIZ AARAB          DATA : 05/03/2017        **                       
 ****************************************************************/                       
@@ -10,28 +10,24 @@
 
 
 //*********************** VARIABLES *****************************
-float a = 3;
-float b = 2;
-float d;
+
+int tempAigua = 101;
+
 //************************* SETUP *******************************
-void setup()               // Ejecutar una vez, cuando se inicia el boceto
-{
-  Serial.begin(9600);      // set up Serial library at 9600 bps
- Serial.println("Here is division: ");
-
-  Serial.print("a = ");
-  Serial.println(a);
-  Serial.print("b = ");
-  Serial.println(b);
-
-  d = a / b;
  
-  Serial.print("a / b = ");
-  Serial.println(d);
+void setup()              // run once, when the sketch starts
+{
+  Serial.begin(9600);     // set up Serial library at 9600 bps
 
+  if ( tempAigua > 100)
+  {
+    Serial.print("Aigua supera els 100C, esta bullint!");
+  } 
 }
+
 //************************* LOOP ********************************
-void loop()    // we need this to be here even though its empty
+
+void loop()   // we need this to be here even though its empty
 {
 }
 //************************* FUNCIONS ****************************
