@@ -23,14 +23,14 @@ void setup()             // run once, when the sketch starts
   Serial.write(num);
   Serial.println();
   
-  Serial.println(num);
-  Serial.println(num,DEC);
+  Serial.println(num); // numero entero
+  Serial.println(num,DEC); // numero decimal
   
-  Serial.println(num,BIN);
+  Serial.println(num,BIN); // numero binario
   
-  Serial.println(num,HEX);
+  Serial.println(num,HEX); // numero hexadecimal
   
-  Serial.println(num,OCT);
+  Serial.println(num,OCT); // numero octa
 }
 
 //************************* LOOP ********************************
